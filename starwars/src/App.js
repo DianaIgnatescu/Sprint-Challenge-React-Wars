@@ -29,7 +29,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state);
     const { starwarsChars } = this.state;
     return (
       <div className="App">
