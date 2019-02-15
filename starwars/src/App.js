@@ -35,7 +35,15 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharacterList starwarsChars={this.state.starwarsChars} />
+        <CharacterList 
+          starwarsChars={this.state.starwarsChars}
+          name={this.state.name}
+          birth_year={this.state.birth_year}
+          gender={this.state.gender}
+          height={this.state.height}
+          eye_color={this.state.eyecolor}
+          hair_color={this.state.hair_color}
+        />
       </div>
     );
   }
