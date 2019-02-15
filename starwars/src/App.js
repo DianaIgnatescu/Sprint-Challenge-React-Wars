@@ -43,6 +43,7 @@ class App extends Component {
           height={this.state.height}
           eye_color={this.state.eyecolor}
           hair_color={this.state.hair_color}
+          films={this.state.films}
         />
       </div>
     );

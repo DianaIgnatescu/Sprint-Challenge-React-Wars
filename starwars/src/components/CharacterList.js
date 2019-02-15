@@ -3,7 +3,7 @@ import React from 'react';
 import Character from './Character';
 
 const CharacterList = props => (
-  <div>
+  <div className="character-list">
     {props.starwarsChars.map(character => (
       <Character
         key={`characterCard-${character.created}`}
@@ -11,8 +11,9 @@ const CharacterList = props => (
         birth_year={character.birth_year}
         gender={character.gender}
         height={character.height}
-        eye_color={character.eyecolor}
+        eye_color={character.eye_color}
         hair_color={character.hair_color}
+        films={character.films}
       />
     ))}
   </div>

@@ -2,13 +2,20 @@
 import React from 'react';
 
 const Character = props => (
-  <div>
-    <h2> Name: {props.name}</h2>
-    <p>Birth Year:{props.birth_year}</p>
-    <p>Gender:{props.gender}</p>
-    <p>Height:{props.height}cm</p>
-    <p>Eye Color:{props.eye_color}</p>
-    <p>Hair Color:{props.hair_color}</p>
+  <div className="character-card">
+
+    <div className="character-name">
+      <h2>{props.name}</h2>
+    </div>
+
+    <div className="character-info">
+      <p><span>Birth Year:</span>{props.birth_year}</p>
+      <p><span>Gender:</span>{props.gender}</p>
+      <p><span>Height:</span>{props.height} cm</p>
+      <p><span>Eye Color:</span>{props.eye_color}</p>
+      <p><span>Hair Color:</span>{props.hair_color}</p>
+      <p><span>Episodes Starred In:</span>{props.films.length}</p>
+    </div>
   </div>
 );
 
