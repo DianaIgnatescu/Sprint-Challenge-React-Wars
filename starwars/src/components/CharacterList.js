@@ -2,9 +2,9 @@
 import React from 'react';
 import Character from './Character';
 
-const CharacterList = props => (
+const CharacterList = ({ starwarsChars }) => (
   <div className="character-list">
-    {props.starwarsChars.map(character => (
+    {starwarsChars.map(character => (
       <Character
         key={`characterCard-${character.created}`}
         name={character.name}
