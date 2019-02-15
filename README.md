@@ -26,11 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+      ReactJS is a library built in Javascript that builds out user interfaces through the use of components. It aims to improve performance by using something called virtual DOM (instead of the old DOM) which only updates with the changes that have taken place, thus minimizing DOM operations and improving performance. React.JS is flexible and allows programmers to use JavaScript and other JavaScript libraries the way they want, and can be used with other frameworks/libraries such as Jquery, Angular, etc. It's also not too complex to learn and the fact that it is component based makes it easier to build and maintain large scale applications and reuse different components throughout the application or in different applications altogether.
+
+- [ ] Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+
+      Class/Stateful components handle the state and methods invoked when the state updates, whereas Functional/Presentational components simply render the pieces of data that have been passed on to them and do not work outside of that scope.  
+
 - [ ] What does it mean to _think_ in react?
+
+      Thinking in react means realizing that every component is built around state and that every component should do ideally one thing.
 
 - [ ] Describe state.
 
+      State is sometimes described as the heart of a react application: it is the data that components can hold on to and pass around other components. State is also what makes components 'reactive' because when state updates, components also update.
+
 - [ ] Describe props.
+
+      Props are essentially parameters. They are passed in to components to aid the component in what it needs to display. They are immutable, meaning that their assignment can only be read, and they can be passed around from top down, or even bottom up through event handlers.
 
 ## Project Set Up
 
